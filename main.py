@@ -1,20 +1,20 @@
-#40级yangyang+90级角，仅用于测试
+import choose
 
-character_atk = 100
-character_level = 40
+character_atk = choose.character_atk
+character_level = choose.character_level
 
-weapon_atk = 587
-weapon_ratio = 0
+weapon_atk = choose.weapon_atk
+weapon_ratio = choose.weapon_ratio
 
-fix_atk_ratio = 0.18
-fix_atk = 50
+fix_atk_ratio = choose.fix_atk_ratio
+fix_atk = choose.fix_atk
 
-dis_enemy_multiplier = 0
-character_dmg_amplify = 0
-element_dmg_increase = 0
-atk_type_dmg_increase = 0
-skill_atk_ratio = 0.225
-chain_atk_ratio = 0
+dis_enemy_multiplier = choose.dis_enemy_multiplier
+character_dmg_amplify = choose.character_dmg_amplify
+element_dmg_increase = choose.element_dmg_increase
+atk_type_dmg_increase = choose.atk_type_dmg_increase
+skill_atk_ratio = choose.skill_atk_ratio
+chain_atk_ratio = choose.chain_atk_ratio
 
 res_ratio = 0
 dis_res_ratio = 0
@@ -67,5 +67,4 @@ dmg_amplify = dmgAmplify(enemy_dmg_amplify,character_dmg_amplify)
 increase = dmg_increase * dmg_amplify
 #结果
 damage = atk * reduce * increase
-print(damage)
-
+print("普攻一段：",damage,end="")
